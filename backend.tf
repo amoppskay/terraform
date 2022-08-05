@@ -1,10 +1,10 @@
  terraform {
    backend "s3" {
-    bucket = "code-sharing-bucket"
-    key    = "avinash/s3file-3.tfstate"
+    bucket = "amps-state-files"
+    key    = "amopps-state-file"
     region = "us-east-1"
-    profile = "jespo"
-dynamodb_table= "firstprojecttable"
+    profile = "default"
+dynamodb_table= "project-module"
    }
  }
 
